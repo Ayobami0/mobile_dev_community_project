@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:mobile_dev_com_dashboard/reuseables/resuable_text.dart';
+import 'package:mobile_dev_com_dashboard/charts_ui/reuseables/resuable_text.dart';
 
 class AssetChat extends StatelessWidget {
   final CustomText legendText;

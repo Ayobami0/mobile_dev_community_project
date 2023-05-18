@@ -1,7 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:mobile_dev_com_dashboard/reuseables/pie_indicators.dart';
-import 'package:mobile_dev_com_dashboard/reuseables/resuable_text.dart';
+import 'package:mobile_dev_com_dashboard/charts_ui/reuseables/pie_indicators.dart';
+import 'package:mobile_dev_com_dashboard/charts_ui/reuseables/resuable_text.dart';
 
 class CustomPieGraph extends StatefulWidget {
   final List<PieIndicators> indicatorList;
