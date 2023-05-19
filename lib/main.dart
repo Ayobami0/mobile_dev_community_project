@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_dev_com_dashboard/widgets/drawer.dart';
+import 'package:mobile_dev_com_dashboard/widgets/widows_data.dart';
 import 'charts_ui/home/home.dart';
 
 void main() {
@@ -11,11 +13,25 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Home(),
+      theme: ThemeData(
+        fontFamily: 'Rubik',
+        appBarTheme: const AppBarTheme(
+          color: Colors.transparent,
+          foregroundColor: Colors.black,
+          shadowColor: Colors.transparent,
+        )
       ),
+      home: Scaffold(
+        appBar: AppBar(
+        ),
+        drawer: const DrawerWidget(),
+        body: const Home(),
+      ),
+      routes: {
+        WidowsData.routeName: (context) => const WidowsData()
+      },
     );
   }
 }
